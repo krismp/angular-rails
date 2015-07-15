@@ -16,6 +16,7 @@
   <span>
     <a href="#/posts/{{ post.id }}">Comments</a>
   </span>
+  posted by <a ng-href="#/users/{{post.user.username}}">{{post.user.username}}</a>
 </div>
 <form ng-submit="addPost()"
   style="margin-top:30px;">
